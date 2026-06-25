@@ -15,7 +15,7 @@ import json
 
 # JSON file handling
 try:
-  with open('data.json', 'r') as file:
+  with open('example_resume.json', 'r') as file:
     data = json.load(file)
     print(json.dumps(data, indent=4))
   
