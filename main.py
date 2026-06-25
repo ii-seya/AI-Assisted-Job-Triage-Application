@@ -1,5 +1,7 @@
-"""Other headers should be pulled to here:
-Resume JSON file header
-import JobSpy library 
-import OpenAI's API
+"""
+Start here:
+Open JSON file
+Open job desc file (.txt)
+
+Print contents here
 """
