@@ -1,0 +1,46 @@
+{
+  "resume_name": "Network Operations Resume",
+  "name": "Isaiah Example",
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Engineering",
+      "school": "University of California, Santa Cruz"
+    }
+  ],
+  "certifications": [
+    "CompTIA Network+"
+  ],
+  "skills": [
+    "TCP/IP",
+    "DNS",
+    "DHCP",
+    "VLANs",
+    "Linux",
+    "Python",
+    "C++",
+    "Network troubleshooting"
+  ],
+  "experience": [
+    {
+      "title": "Technical Tutor",
+      "organization": "Example University",
+      "responsibilities": [
+        "Explained technical concepts to students",
+        "Debugged programming and hardware issues",
+        "Documented common troubleshooting steps"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "OpenFlow Network Firewall",
+      "technologies": [
+        "Python",
+        "POX",
+        "Mininet",
+        "OpenFlow"
+      ],
+      "description": "Built and tested firewall and routing rules in a simulated network environment."
+    }
+  ]
+}

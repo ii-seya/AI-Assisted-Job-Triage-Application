@@ -1,0 +1,28 @@
+NOC Technician
+
+Company: Example Networks
+Location: San Francisco, CA
+Employment Type: Full-time
+
+Job Summary:
+Example Networks is seeking an entry-level NOC Technician to monitor network systems, respond to alerts, troubleshoot connectivity issues, and escalate incidents when necessary.
+
+Responsibilities:
+- Monitor network devices and service dashboards.
+- Investigate connectivity and performance alerts.
+- Perform basic troubleshooting for TCP/IP, DNS, DHCP, and VLAN issues.
+- Document incidents and troubleshooting steps.
+- Escalate unresolved problems to senior engineers.
+- Communicate status updates to internal teams.
+
+Required Qualifications:
+- Associate or bachelor's degree in information technology, computer engineering, computer science, or a related field.
+- Basic understanding of TCP/IP networking.
+- Strong written and verbal communication skills.
+- Ability to work occasional evening or weekend shifts.
+
+Preferred Qualifications:
+- CompTIA Network+ or CCNA.
+- Experience with Linux.
+- Familiarity with ticketing systems and network monitoring tools.
+- Previous technical support or laboratory experience.
