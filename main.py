@@ -17,7 +17,7 @@ import json
 try:
   with open('data.json', 'r') as file:
     data = json.load(file)
-  print(json.dumps(data, indent=4))
+    print(json.dumps(data, indent=4))
   
 except json.JSONDecodeError:
     print("Error: Failed to decode JSON from the file.")
@@ -25,7 +25,7 @@ except json.JSONDecodeError:
 # Job Desc. file handling
 try:
   with open("jobdesc.txt") as f:
-  print(f.read())
+    print(f.read())
 
 except FileNotFoundError: 
   print("File does not exist")
