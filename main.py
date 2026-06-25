@@ -24,7 +24,7 @@ except json.JSONDecodeError:
 
 # Job Desc. file handling
 try:
-  with open("jobdesc.txt") as f:
+  with open("example_job_description.txt") as f:
     print(f.read())
 
 except FileNotFoundError: 
