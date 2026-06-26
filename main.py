@@ -1,37 +1,43 @@
-"""
-Workflow:
-
-open and parse json file
-
-open and read .txt file (job desc)
-
-check for:
-1. missing .txt file
-2. malformed JSON file
-
-print results
-"""
 import json
 
-# JSON file handling
-try:
-  with open('example_resume.json', 'r') as file:
-    data = json.load(file)
-    print(json.dumps(data, indent=4))
-  
-except json.JSONDecodeError:
-    print("Error: Failed to decode JSON from the file.")
+# Separating JSON and text file handling 
 
-# Job Desc. file handling
-try:
-  with open("example_job_description.txt") as f:
-    print(f.read())
+def load_resume(filename):
+  try:
+    with open(filename, 'r') as file:
+      data = json.load(file)
+      print(json.dumps(data, indent=4))
+    
+  except json.JSONDecodeError:
+      print("Error: Failed to decode JSON from the file.")
 
-except FileNotFoundError: 
-  print("File does not exist")
+def load_job_desc(filename):
+  try:
+    with open(filename) as file:
+      print(file.read())
+  
+  except FileNotFoundError: 
+    print("File does not exist")
 
-finally:
-  f.close()
+  finally:
+    file.close()
+
+def main():
+  # Carry the loaded files and print from main 
+  resume_data = load_resume('example_resume.json')
+  job_desc = load_job_desc('example_job_description.txt')
+
+  print(resume_data)
+  print(job_desc)
+
   
-  
+if __name__ == "__main__":
+  main()
+
+
+
+
+
+
+
 
