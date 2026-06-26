@@ -61,8 +61,8 @@ def evaluate_job(resume_data, job_desc_data):
   print(response.output_text)
 
 def main():
-  resume_data = load_resume('example_resume.json1')
-  job_desc = load_job_desc('example_job_description.txt2')
+  resume_data = load_resume('example_resume.json')
+  job_desc = load_job_desc('example_job_description.txt')
 
   if resume_data is None or job_desc is None:
     print("Unable to continue because either JSON file or Job Description file could not be loaded")
