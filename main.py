@@ -10,6 +10,7 @@ def load_resume(filename):
     
   except json.JSONDecodeError:
       print("Error: Failed to decode JSON from the file.")
+      return None
 
 def load_job_desc(filename):
   try:
@@ -19,7 +20,8 @@ def load_job_desc(filename):
     
   except FileNotFoundError: 
     print("File does not exist")
-
+    return None
+  
   finally:
     file.close()
 
