@@ -12,6 +12,10 @@ def load_resume(filename):
       print("Error: Failed to decode JSON from the file.")
       return None
 
+  except FileNotFoundError:
+      print("File does not exist")
+      return None
+
 def load_job_desc(filename):
   try:
     with open(filename) as file:
@@ -28,7 +32,7 @@ def load_job_desc(filename):
 def main():
   # Carry the loaded files and print from main 
   resume_data = load_resume('example_resume1.json')
-  job_desc = load_job_desc('example_job_description.txt')
+  job_desc = load_job_desc('example_job_description2.txt')
 
   print(resume_data)
   print(job_desc)
