@@ -1,4 +1,9 @@
 import json
+import os 
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
 
 # Separating JSON and text file handling 
 
@@ -25,9 +30,37 @@ def load_job_desc(filename):
   except FileNotFoundError: 
     print("File does not exist")
     return None
+
+# Resume and Job Desc are now evaluated by GPT 5.5
+def evaluate_job(resume_data, job_desc_data): 
+  # convert JSON to readable text
+  json.dumps(resume_data, indent=2)
+
+  # temporary placeholder for API
+  client = OpenAI()
+  response = client.responses.create(
+    model="gpt-5",
+    input=f"You are evaluating whether a candidate is a reasonable fit for a job.
+
+    Use only the supplied résumé.
+    Do not invent qualifications.
     
+    RESUME:
+    [resume text]
+    
+    JOB DESCRIPTION:
+    [job-description text]
+    
+    Return:
+    - Overall fit
+    - Strong matches
+    - Major gaps
+    - Recommendation
+    ")
+
+  print(response.output_text)
+
 def main():
-  # Carry the loaded files and print from main 
   resume_data = load_resume('example_resume.json1')
   job_desc = load_job_desc('example_job_description.txt2')
 
@@ -35,10 +68,9 @@ def main():
     print("Unable to continue because either JSON file or Job Description file could not be loaded")
     return 
   else:
-    print(resume_data)
-    print(job_desc)
+    report = evaluate_job(resume_data,job_desc)
+    print(report)
 
-  
 if __name__ == "__main__":
   main()
 
