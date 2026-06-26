@@ -35,8 +35,8 @@ def main():
     print("Unable to continue because either JSON file or Job Description file could not be loaded")
     return 
   else:
-  print(resume_data)
-  print(job_desc)
+    print(resume_data)
+    print(job_desc)
 
   
 if __name__ == "__main__":
