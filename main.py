@@ -28,8 +28,8 @@ def load_job_desc(filename):
     
 def main():
   # Carry the loaded files and print from main 
-  resume_data = load_resume('example_resume.json')
-  job_desc = load_job_desc('example_job_description.txt')
+  resume_data = load_resume('example_resume.json1')
+  job_desc = load_job_desc('example_job_description.txt2')
 
   print(resume_data)
   print(job_desc)
