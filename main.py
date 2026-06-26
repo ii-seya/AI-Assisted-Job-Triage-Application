@@ -40,7 +40,7 @@ def evaluate_job(resume_data, job_desc_data):
   client = OpenAI()
   response = client.responses.create(
     model="gpt-5",
-    input=f"You are evaluating whether a candidate is a reasonable fit for a job.
+    input=f"""You are evaluating whether a candidate is a reasonable fit for a job.
 
     Use only the supplied résumé.
     Do not invent qualifications.
@@ -56,7 +56,7 @@ def evaluate_job(resume_data, job_desc_data):
     - Strong matches
     - Major gaps
     - Recommendation
-    ")
+    """)
 
   print(response.output_text)
 
