@@ -27,7 +27,7 @@ def load_job_desc(filename):
 
 def main():
   # Carry the loaded files and print from main 
-  resume_data = load_resume('example_resume.json')
+  resume_data = load_resume('example_resume1.json')
   job_desc = load_job_desc('example_job_description.txt')
 
   print(resume_data)
