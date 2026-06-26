@@ -25,14 +25,11 @@ def load_job_desc(filename):
   except FileNotFoundError: 
     print("File does not exist")
     return None
-  
-  finally:
-    file.close()
-
+    
 def main():
   # Carry the loaded files and print from main 
-  resume_data = load_resume('example_resume1.json')
-  job_desc = load_job_desc('example_job_description2.txt')
+  resume_data = load_resume('example_resume.json')
+  job_desc = load_job_desc('example_job_description.txt')
 
   print(resume_data)
   print(job_desc)
