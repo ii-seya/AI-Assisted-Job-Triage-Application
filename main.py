@@ -46,10 +46,10 @@ def evaluate_job(resume_data, job_desc_data):
     Do not invent qualifications.
     
     RESUME:
-    [resume text]
+    {resume_data}
     
     JOB DESCRIPTION:
-    [job-description text]
+    {job_desc_data}
     
     Return:
     - Overall fit
@@ -58,7 +58,7 @@ def evaluate_job(resume_data, job_desc_data):
     - Recommendation
     """)
 
-  print(response.output_text)
+  return response.output_text
 
 def main():
   resume_data = load_resume('example_resume.json')
