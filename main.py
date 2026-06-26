@@ -10,9 +10,11 @@ def load_resume(filename):
     
   except json.JSONDecodeError:
       print("Error: Failed to decode JSON from the file.")
+      return None
 
   except FileNotFoundError:
       print("File does not exist")
+      return None
 
 def load_job_desc(filename):
   try:
@@ -22,12 +24,17 @@ def load_job_desc(filename):
     
   except FileNotFoundError: 
     print("File does not exist")
+    return None
     
 def main():
   # Carry the loaded files and print from main 
   resume_data = load_resume('example_resume.json1')
   job_desc = load_job_desc('example_job_description.txt2')
 
+  if resume_data is None or job_desc is None:
+    print("Unable to continue because either JSON file or Job Description file could not be loaded")
+    return 
+  else:
   print(resume_data)
   print(job_desc)
 
