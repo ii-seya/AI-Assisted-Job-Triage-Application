@@ -78,8 +78,8 @@ Field meanings:
 - strong_matches: résumé evidence that directly supports job requirements.
 - major_gaps: important qualifications, experience, or constraints not demonstrated.
 - summary: concise explanation of the overall evaluation. 
-"""
-    text_format=schema
+""",
+  text_format=schema
   )
 
   # Parse each field instead of returning the whole thing
