@@ -97,7 +97,7 @@ def main():
     print("Grade:", report.fit_grade)
     print("Score:", report.fit_score)
     print("Decision:", report.decision)
-    print("Strong Matches:", report.decision)
+    print("Strong Matches:", report.strong_matches)
     print("Major Gaps:", report.major_gaps)
     print("Summary:", report.summary)
 
