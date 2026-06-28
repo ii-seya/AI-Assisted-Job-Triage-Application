@@ -9,14 +9,17 @@ def main():
   if resume_data is None or job_desc is None:
     print("Unable to continue because either JSON file or Job Description file could not be loaded")
     return 
+  
   else:
     report = evaluator.evaluate_job(resume_data,job_desc)
-    print("Grade:", report.fit_grade)
-    print("Score:", report.fit_score)
-    print("Decision:", report.decision)
-    print("Strong Matches:", report.strong_matches)
-    print("Major Gaps:", report.major_gaps)
-    print("Summary:", report.summary)
+    report_data = report.model_dump(mode="json")
+
+    if report is None:
+      return
+      
+    else:
+      with open('job_report.json', 'w', encoding='utf-8') as f:
+        json.dump(report_data, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
   main()
