@@ -1,0 +1,23 @@
+{
+    "fit_grade": "A-",
+    "fit_score": 87,
+    "decision": "APPLY_AND_TAILOR",
+    "strong_matches": [
+        "Bachelor of Science in Computer Engineering (University of California, Santa Cruz)",
+        "CompTIA Network+ certification",
+        "Skills listed: TCP/IP, DNS, DHCP, VLANs",
+        "Linux experience",
+        "Network troubleshooting skill listed",
+        "Documented troubleshooting steps in prior role (Technical Tutor)",
+        "Communication: explained technical concepts to students (Technical Tutor)",
+        "Relevant networking project: OpenFlow network firewall using Python/POX/Mininet (built and tested firewall and routing rules)"
+    ],
+    "major_gaps": [
+        "No explicit experience with network monitoring tools/dashboards listed",
+        "No mention of ticketing systems experience",
+        "No direct NOC/help desk or operations center role experience",
+        "Availability for evening/weekend shifts not stated",
+        "No explicit experience with formal incident escalation procedures"
+    ],
+    "summary": "Strong entry-level fit with relevant degree, Network+ certification, core networking skills (TCP/IP, DNS, DHCP, VLANs), Linux familiarity, troubleshooting, documentation, and communication evidenced by tutoring and a networking project. Primary gaps are lack of explicit NOC/tooling and ticketing experience, plus unstated shift availability. Recommend applying and tailoring the résumé to emphasize troubleshooting workflow, documentation, and any exposure to monitoring or escalation in projects."
+}
